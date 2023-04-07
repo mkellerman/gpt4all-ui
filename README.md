@@ -1,4 +1,4 @@
-# gpt4all-fastapi
+# gpt4all-ui
  
 # Clone the repositor (with submodules)
 
