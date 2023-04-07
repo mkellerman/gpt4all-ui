@@ -1,0 +1,22 @@
+version: '3.6'
+
+services:
+  chatgpt:
+    build: chatbot-ui/.
+    ports:
+      - 3000:3000
+    environment:
+      - 'OPENAI_API_KEY=000000000000000'
+      - 'OPENAI_API_HOST=http://api:8000'
+
+  api:
+    build: api/.
+    volumes:
+      - ./models:/models
+    ports:
+      - 8000:8000
+    environment:
+      - MODEL=/models/7B/gpt4all-lora-quantized.ggml
+      
+
+    

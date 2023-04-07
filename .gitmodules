@@ -1,0 +1,6 @@
+[submodule "chatbot-ui"]
+	path = chatbot-ui
+	url = https://github.com/mckaywrigley/chatbot-ui
+[submodule "api/llama-cpp-python"]
+	path = api/llama-cpp-python
+	url = https://github.com/abetlen/llama-cpp-python
