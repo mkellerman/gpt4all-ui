@@ -22,3 +22,8 @@ docker compose up -d
 ```
 
 And open http://localhost:3000
+
+# Sources:
+
+chatboi-ui (web): https://github.com/mckaywrigley/chatbot-ui
+llama-cpp-python (api): https://github.com/abetlen/llama-cpp-python
