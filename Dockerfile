@@ -5,7 +5,7 @@ RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requ
   && rm -rf /tmp/pip-tmp
 
 WORKDIR /app
-COPY llama-cpp-python/examples/high_level_api/ ./
+COPY app/ ./
 
 EXPOSE 8000
 ENTRYPOINT [ "uvicorn", "--reload", "--host", "0.0.0.0", "fastapi_server:app" ]

@@ -1,8 +1,10 @@
 version: '3.6'
 
 services:
+
   chatgpt:
-    build: chatbot-ui/.
+    image: ghcr.io/mckaywrigley/chatbot-ui:main
+    platform: linux/amd64
     ports:
       - 3000:3000
     environment:
@@ -10,13 +12,10 @@ services:
       - 'OPENAI_API_HOST=http://api:8000'
 
   api:
-    build: api/.
+    build: .
     volumes:
       - ./models:/models
     ports:
       - 8000:8000
     environment:
       - MODEL=/models/7B/gpt4all-lora-quantized.ggml
-      
-
-    
