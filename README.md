@@ -17,13 +17,13 @@ Models should be copied to `models` folder in the root of the `gpt4all-ui` folde
 
 If you have your models located somewhere else, you can create a alias (link) to your folder.
 ```
-ln -s /Users/Me/Documents/Models model
+ln -s /Users/Me/Documents/Models models
 ```
 
 ### Start it up
 
 ```
-docker compose up -d
+docker-compose up -d
 ```
 
 And open http://localhost:3000
