@@ -4,25 +4,26 @@ Simple Docker Compose to load gpt4all (Llama.cpp) as an API and chatbot-ui for t
 
 <img width="1664" alt="Screenshot 2023-04-06 at 10 40 40 PM" src="https://user-images.githubusercontent.com/9411143/230548570-2624d9bd-c1e1-4e28-99d6-dee8f027f899.png">
 
-### Clone the repositor (with submodules)
+### Clone the repository (with submodules)
 
-```
+```bash
 git clone https://github.com/mkellerman/gpt4all-ui.git
 cd gpt4all-ui
 ```
 
 ### Copy your Models in the workspace
 
-Models should be copied to `models` folder in the root of the `gpt4all-ui` folder. 
+Models should be copied to `models` folder in the root of the `gpt4all-ui` folder.
 
-If you have your models located somewhere else, you can create a alias (link) to your folder.
-```
+If you have your models located somewhere else, you can create an alias (link) to your folder.
+
+```bash
 ln -s /Users/Me/Documents/Models models
 ```
 
 ### Start it up
 
-```
+```bash
 docker-compose up -d
 ```
 
